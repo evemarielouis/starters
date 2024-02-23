@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Starter packs</h1>
+
+<div id="starter_packs">
+  <% @starter_packs.each do |starter_pack| %>
+    <%= render starter_pack %>
+    <p>
+      <%= link_to "Show this starter pack", starter_pack %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New starter pack", new_starter_pack_path %>

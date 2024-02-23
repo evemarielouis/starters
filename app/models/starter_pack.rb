@@ -1,0 +1,2 @@
+class StarterPack < ApplicationRecord
+end
