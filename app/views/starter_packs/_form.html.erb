@@ -11,47 +11,58 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
+  <section class="formulaire">
+    <div class="col-1">
+      <div class="case">
+        <%= form.label :name, style: "display: block" %>
+        <%= form.text_field :name %>
+      </div>
 
-  <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_area :icon %>
-  </div>
+      <div class="case">
+        <%= form.label :title, style: "display: block" %>
+        <%= form.text_area :title %>
+      </div>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_area :title %>
-  </div>
+      <div class="case">
+        <%= form.label :icon, style: "display: block" %>
+        <%= form.text_area :icon %>
+      </div>
 
-  <div>
-    <%= form.label :image_one, style: "display: block" %>
-    <%= form.text_area :image_one %>
-  </div>
+      <div class="case">
+        <%= form.label :description, style: "display: block" %>
+        <%= form.text_area :description %>
+      </div>
 
-  <div>
-    <%= form.label :image_two, style: "display: block" %>
-    <%= form.text_area :image_two %>
-  </div>
+    </div>
 
-  <div>
-    <%= form.label :image_three, style: "display: block" %>
-    <%= form.text_area :image_three %>
-  </div>
+    <div class="col-2">
+      <div class="case">
+        <%= form.label :image_one, style: "display: block" %>
+        <%= form.text_area :image_one %>
+      </div>
 
-  <div>
-    <%= form.label :image_four, style: "display: block" %>
-    <%= form.text_area :image_four %>
-  </div>
+      <div class="case">
+        <%= form.label :image_two, style: "display: block" %>
+        <%= form.text_area :image_two %>
+      </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
-  </div>
+      <div class="case">
+        <%= form.label :image_three, style: "display: block" %>
+        <%= form.text_area :image_three %>
+      </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
+      <div class="case">
+        <%= form.label :image_four, style: "display: block" %>
+        <%= form.text_area :image_four %>
+      </div>
+
+      <div class="create">
+        <%= form.submit %>
+      </div>
+    </div>
+    
+  </section>
+
+
+
 <% end %>

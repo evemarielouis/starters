@@ -13,22 +13,6 @@
  *= require_tree .
  *= require_self
  */
-
- /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 /* PAGE INDEX */ 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
@@ -136,7 +120,7 @@ a {
    justify-content: center;
    align-items: center;
    height: 100vh;
-   position:relative;
+   position: relative;
 
    padding: 1.5em 2em;
 }
@@ -164,7 +148,6 @@ a {
    left:20px;
 
 }
-
 
 .modal2 {
    visibility: hidden;
@@ -202,78 +185,68 @@ a {
    opacity: 0;
 }
 
-.back {
-   font-family: "VT323", monospace;
-   font-size: 22px;
-   margin-left: 2.5em;
-   position: absolute;
-   z-index: 3;
-   bottom:5.5em;
-   left:12em;
-}
+/* PAGE CREER NEW */ 
 
-.back a{
-
+/*bouton retour */
+.blocnote ul a {
    color: purple;
 }
 
-.back a:hover {
-
+.blocnote ul a:hover {
    color: grey;
 }
 
-.blocnote {
-position: absolute;
-top: 2em;
-left:300px;
-z-index: 1;
+.container .blocnote ul {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5em;
+   font-family: "VT323", monospace;
+   font-size: 15px;
+   list-style-type: none;
 }
 
+/* fond page create/modify */ 
+.blocnote {
+   position:absolute;
+   background-repeat: no-repeat;
+   background-size: contain;
+   width:50%;
+   height: 90%;
+   margin-left: 25%;
+   margin-top: 2em;
+   background-image: url('https://cdn.discordapp.com/attachments/1210360796194799677/1210525410518106122/bloc.png?ex=65eae0a4&is=65d86ba4&hm=59bef6e6501a6a2db638af418aa40c0382998dee65a902b9ed2682dd773e4c80&');
+}
+
+/* formulaire create !*/
 .formulaire {
-display: flex;
-position: absolute;
-left:30em;
-z-index: 2;
-top:13.5em;
+   display: flex;
+   margin-left: 5em;
+   margin-top: -2em;
 }
 
 .create {
-   position: absolute;
-   z-index: 3;
-   left:130px;
-   top:310px;
-   
+   margin-left: -6em;
 }
 
 .col-1 {
    padding: 10px;
-
 }
 
 .col-2 {
    padding: 10px;
-
 }
 
+/*text create */
 .textform{
-
-   position:absolute;
-   top: 4.5em;
-   left: 16em;
-   z-index:2;
+   width: 600px;
+   margin-left: 1.5em;
+   margin-top: 3em;
    font-family: "VT323", monospace;
-   font-size: 22px;
-
-}
-
-.textform h1 {
-
-
+   font-size: 18px;
 }
 
 
 .textform p{
-
    margin-top: -25px;
 }
 
@@ -284,16 +257,14 @@ top:13.5em;
 }
 
 .case textarea {
-
-line-height: 1;
-border: 2px solid black;
+   line-height: 1;
+   border: 2px solid black;
 }
 
 .case input {
-
    line-height: 1;
    border: 2px solid black;
-   }
+}
    
 .create input{
    font-family: "VT323", monospace;
@@ -302,43 +273,30 @@ border: 2px solid black;
    border: 2px solid black;
    padding: 5px;
    padding-inline: 10px;
-   
+
 }
 
 .create input:hover {
-
    border: 2.5px solid black;
    cursor:cell;
    box-shadow: 10px 6px grey;
-
 }
    
 .closebutton{
-
-   position: absolute;
-   z-index: 3;
    right:19.9em;
    top:2.1em;
-
-
 }
 
 .navigation {
-position:absolute;
-z-index:3;
-bottom:8em;
-left:34em;
-font-family: "VT323", monospace;
+   bottom:8em;
+   left:34em;
+   font-family: "VT323", monospace;
 }
 
 .navigation a{
-
    color: purple;
-
 }
 
 .navigation a:hover{
-
    color: grey;
-
 }
