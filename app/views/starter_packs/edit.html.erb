@@ -1,23 +1,15 @@
 <div class="container">
-  <img class="blocnote" src="https://cdn.discordapp.com/attachments/1210360796194799677/1210525410518106122/bloc.png?ex=65eae0a4&is=65d86ba4&hm=59bef6e6501a6a2db638af418aa40c0382998dee65a902b9ed2682dd773e4c80&">
-  <div class="textform">
-    <h1>Éditer un starterpack</h1>
-    <p> Modifie les informations d'un starterpack ! </p>
+  <div class="blocnote">
+    <div class="textform">
+      <h1>Update starterpack</h1>
+      <p>Modifie les informations d'un starterpack !</p>
+      <ul class="link">
+        <li>➜ <b>starterpack</b> request:(admin) <a href="/#">/return index</a></li>
+        <li>➜ <b>starterpack</b> request:(admin) <%= link_to "/show this starter pack", @starter_pack %></li>
+        <li>➜ <b>starterpack</b> request:(admin) <%= link_to "/return starterpacks", starter_packs_path %></li>
+      </ul>
+    </div>
+
+    <%= render "form", starter_pack: @starter_pack %>
   </div>
-
-
-<%= render "form", starter_pack: @starter_pack %>
-
-<br>
-
-<div class="navigation">
-  <%= link_to "Back to starter packs", starter_packs_path %>
-  <%= link_to "Show this starter pack", @starter_pack %>
 </div>
-
-<div class="closebutton">
-<a href="/#" class="close"><img src="https://images2.imgbox.com/a5/86/sskaKYhL_o.png"/></a>
-  </div>
-
-</div>
-
