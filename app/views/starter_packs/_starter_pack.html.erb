@@ -1,42 +1,42 @@
-<div id="<%= dom_id starter_pack %>">
-  <p>
-    <strong>Name:</strong>
-    <%= starter_pack.name %>
-  </p>
+<div class="containerPack">
+  <div id="<%= dom_id starter_pack %>" class="pack">
+    <div class="flexpack">
+      <div class="packTitle">
+        <h1>
+          <%= starter_pack.name %>
+        </h1>
+          <ul class="link">
+            <li>➜ <b>starterpack</b> request:(guest) <%= link_to "/return", starter_packs_path %></li>
+            <li>➜ <b>starterpack</b> request:(admin) <%= link_to "/modify", edit_starter_pack_path(@starter_pack) %></li>
+            <li><%= button_to "Destroy this starter pack", @starter_pack, method: :delete, class:'button-delete' %></li>
+            </ul>
+      </div>
 
-  <p>
-    <strong>Icon:</strong>
-    <%= starter_pack.icon %>
-  </p>
+      <div class="packImages">
+          <div class="iconTitleBox">
+            <%= image_tag starter_pack.icon %>
+            <h2>
+            <%= starter_pack.title %>
+            </h2>
+          </div>
 
-  <p>
-    <strong>Title:</strong>
-    <%= starter_pack.title %>
-  </p>
+          <div class="listImages">
+              <%= image_tag starter_pack.image_one %>
 
-  <p>
-    <strong>Image one:</strong>
-    <%= starter_pack.image_one %>
-  </p>
+              <%= image_tag starter_pack.image_two %>
 
-  <p>
-    <strong>Image two:</strong>
-    <%= starter_pack.image_two %>
-  </p>
+              <%= image_tag starter_pack.image_three %>
 
-  <p>
-    <strong>Image three:</strong>
-    <%= starter_pack.image_three %>
-  </p>
+              <%= image_tag starter_pack.image_four %>
+          </div>
+      </div>
+    </div>
 
-  <p>
-    <strong>Image four:</strong>
-    <%= starter_pack.image_four %>
-  </p>
+    <div class="packDescription">
+      <p>
+        <%= starter_pack.description %>
+      </p>
+    </div>
 
-  <p>
-    <strong>Description:</strong>
-    <%= starter_pack.description %>
-  </p>
-
+  </div>
 </div>

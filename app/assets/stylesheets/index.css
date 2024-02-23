@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* BIGGEST CONTAINER THAT HOLDS EVERYTHING */
+.mainContainer {
+    position:absolute;
+    background-image: url("https://images2.imgbox.com/fb/0b/kpMBA1Ua_o.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:50%;
+    height: 90%;
+    margin-left: 25%;
+    margin-top: 2em;
+}
+
+.mainContainer .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1.2em;
+}
+
+.mainContainer h1 {
+    font-family: "VT323", monospace;
+    text-transform: lowercase;
+    margin-left: 1.5em;
+    color:#fff;
+    font-size: 25px;
+    margin-top: 0.9em;
+}
+
+.mainContainer a.backButton {
+    color: white;
+    font-size: 40px;
+    margin-right: 0.4em;
+    text-decoration: none;
+}
+.mainContainer a.backButton:visited {
+    color:#fff;
+}
+
+.mainContainer h2 { 
+    font-family: "VT323", monospace;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 30px;
+}
+
+.mainContainer .link {
+    font-family: "VT323", monospace;
+    font-size: 22px;
+    margin-left: 2.5em;
+}
+
+.mainContainer a {
+    color: purple;
+}
+
+.mainContainer a:visited {
+    color: purple;
+}
+
+.mainContainer a:hover {
+    color: grey;
+}
+
+/* CONTAINER FOR THE H2 & PIC */
+.introductionContainer{
+    display:flex;
+    gap:2em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    overflow:auto;
+}
+
+.mainContainer .introductionContainer img {
+    width: 70px;
+    height: 70px;
+}
+
+/* CONTAINER FOR THE PACKS */
+.insideContainer img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.insideContainer {
+    display: flex;
+    font-family: "VT323", monospace;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.insideContainer ul {
+    display: flex;
+    flex-direction:row;
+    gap: 2em;
+}
+
+.insideContainer li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.insideContainer a {
+    color: blue;
+}
+
+.insideContainer a:visited {
+    color: red;
+}
+
+.insideContainer a:hover {
+    color: grey;
+}
+
+.information {
+    display: flex;
+    font-family: "VT323", monospace;
+    font-size: 20px;
+    justify-content: center;
+}

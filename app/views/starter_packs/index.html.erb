@@ -1,14 +1,32 @@
-<p style="color: green"><%= notice %></p>
+<div class="container">
+  <div class="mainContainer">
+  <div class="nav">
+    <h1>starter_packs.exe</h1>
+    <a href="./#" class="backButton"><img src="https://cdn.discordapp.com/attachments/1210360796194799677/1210587215109816380/buttonclose.png?ex=65eb1a33&is=65d8a533&hm=81c87c765042a7a59cdec5b1b39cb015164fd812117cace799cd15089e7d2ae4&%20/%3E%3C/a%3E%20%20%3C/div%3E%20%20%20%20%3Cdiv%20class=" /></a>
+  </div>
 
-<h1>Starter packs</h1>
+  
+  <div class="introductionContainer">
+    <img src="https://images2.imgbox.com/e2/04/OIsU7NUn_o.png" /> 
+    <h2>quel starterpack veux-tu ?<h2>
+  </div>
 
-<div id="starter_packs">
-  <% @starter_packs.each do |starter_pack| %>
-    <%= render starter_pack %>
-    <p>
-      <%= link_to "Show this starter pack", starter_pack %>
-    </p>
-  <% end %>
+  <div id="starter_packs" class="insideContainer">
+    <ul>
+      <% @starter_packs.each do |starter_pack| %>
+      <li>
+        <%= image_tag starter_pack.icon %><br>
+        <%= link_to starter_pack.name, starter_pack %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+
+<!-- pour n'autorisée qu'un admin : if user.id = (le user.id dans bdd) 
+  puts link_to etcetc -->
+  <p class="link">➜ <b>starterpack</b> request:(admin) <%= link_to "créer un nouveau pack", new_starter_pack_path %></p>
+
+  <p class="information"><%= notice %></p>
+</div>
 </div>
 
-<%= link_to "New starter pack", new_starter_pack_path %>

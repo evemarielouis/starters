@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+ .containerPack {
+    position:absolute;
+    background-image: url("https://cdn.discordapp.com/attachments/1210360796194799677/1210364082176135229/windowsxp.png?ex=65ea4a64&is=65d7d564&hm=83f400e8a8dcff549f19592c91329bb0c3011599d41fc66bbd5028249560f281&");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110%;
+    width: 100%;
+    margin-left: -8px;
+    margin-top: -2em;
+}
+
+.flexpack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CONTAINER WINDOW1 (TITLE) */
+.packTitle {
+    width: 320px;
+    height: 180px;
+    margin-left: 10em;
+    position:static;
+    background-image: url("https://images2.imgbox.com/6e/a6/SlO24hzB_o.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: -10em;
+}
+
+.packTitle button {
+    font-size: 12px;
+    background: red;
+    color: white;
+    font-family: "VT323", monospace;
+    padding: 2px;
+}
+
+.packTitle a {
+    color: blue;
+}
+
+.packTitle a:hover {
+    color: purple;
+}
+
+.packTitle h1 {
+    margin-left: 2em;
+    margin-top: 1.3em;
+    font-family: "VT323", monospace;
+    font-size: 45px;
+}
+
+.packTitle ul.link {
+    font-family: "VT323", monospace;
+    font-size: 15px;
+    margin-top: -2em;
+    list-style-type: none;
+}
+
+/* CONTAINER WINDOW2 (IMAGES)*/
+.packImages {
+    background-image: url("https://cdn.discordapp.com/attachments/1210360796194799677/1210541790470606879/backgroundimages.png?ex=65eaefe5&is=65d87ae5&hm=fd416626d71111688b6883eb3d5b7b327b43902bc60a34090059948bcb404eeb&");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 570px;
+    height: 520px;
+    margin-right: 5em;
+    z-index: 1;
+    margin-top: 2em;
+    overflow:auto;
+}
+
+.packImages::-webkit-scrollbar {
+    display: none;
+}
+
+.packImages .iconTitleBox {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3em;
+    margin-top: 4em;
+    justify-content: center;
+    align-items: center;
+}
+
+.packImages .iconTitleBox h2 {
+    font-family: "VT323", monospace;
+    font-size: 25px;
+}
+
+.packImages .iconTitleBox img {
+    width: 60px;
+}
+
+.packImages .listImages {
+    height: 200px;
+    width: 400px;
+    margin-left: 7em;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto;
+}
+
+.pack .listImages img {
+    width: 120px;
+}
+
+/* CONTAINER WINDOW3 (DESCRIPTION) */
+.packDescription {
+    position: relative;
+    background-image: url("https://images2.imgbox.com/97/7c/wK5sWnnV_o.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    width: 720px;
+    height: 290px;
+    margin-top: -13em;
+    margin-left: 10em;
+}
+
+.packDescription p {
+    position: absolute;
+    max-width: 540px;
+    max-height: 150px;
+    overflow: scroll;
+    margin-left: 6em;
+    margin-top: 3em;
+    font-family: "VT323", monospace;
+    font-size: 20px;
+}
