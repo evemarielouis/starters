@@ -16,6 +16,9 @@
 /* PAGE INDEX */ 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+/* CURSOR*/
+
+
 /* page choisir sa catégorie de starterpack (page2) */
 .container {
    position:absolute;
@@ -45,7 +48,11 @@ body {
    background-image: url("windowsxp.png");
    background-repeat: no-repeat;
    background-size: cover;
-
+   cursor: url("https://i.pinimg.com/originals/9b/cc/e9/9bcce95527358ea58124e9a03c905fbe.png") 13 7, auto !important;
+}
+   
+a {
+   cursor: url("https://images.vexels.com/media/users/3/158105/isolated/lists/22becce14efa74bc6c83bec78f9d9b1e-pixel-hand-cursor-icon.png") 64 12, auto !important; 
 }
 
 .mainalert {
