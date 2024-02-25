@@ -83,18 +83,19 @@
     height: 60px;
 }
 
-
 .insideContainer {
-    display: flex;
+    display: grid;
     font-family: "VT323", monospace;
     font-size: 20px;
     justify-content: center;
+    margin-left: -4em;
 }
 
 .insideContainer ul {
-    display: flex;
-    flex-direction:row;
-    gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow:scroll;
+    max-height: 200px;
 }
 
 .insideContainer li {
