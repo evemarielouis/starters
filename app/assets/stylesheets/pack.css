@@ -96,12 +96,13 @@
 }
 
 .packImages .listImages {
-    height: 200px;
+    height: 240px;
     width: 400px;
     margin-left: 7em;
     display: grid;
     gap: 5px;
     grid-template-columns: auto auto;
+    overflow: scroll;
 }
 
 .pack .listImages img {
@@ -117,7 +118,7 @@
     z-index: 2;
     width: 720px;
     height: 290px;
-    margin-top: -13em;
+    margin-top: -10em;
     margin-left: 10em;
 }
 
