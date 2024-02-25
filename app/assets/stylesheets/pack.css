@@ -103,6 +103,11 @@
     gap: 5px;
     grid-template-columns: auto auto;
     overflow: scroll;
+    overflow-x: hidden;
+}
+
+.packImages .listImages a {
+    text-decoration: none;
 }
 
 .pack .listImages img {
