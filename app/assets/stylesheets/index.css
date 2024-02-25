@@ -94,7 +94,8 @@
 .insideContainer ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    overflow:scroll;
+    overflow-y:scroll;
+    overflow-x: hidden;
     max-height: 200px;
 }
 
